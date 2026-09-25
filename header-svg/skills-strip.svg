@@ -13,7 +13,7 @@
     </linearGradient>
 
     <style>
-      .chip { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #ffffff; }
+      .chip { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; }
     </style>
   </defs>
 
@@ -25,54 +25,60 @@
     <rect x="25" y="30" width="120" height="50" rx="12" fill="#0369a1" stroke="#38bdf8" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="3s" repeatCount="indefinite"/>
     </rect>
-    <text x="85" y="60" text-anchor="middle" class="chip">⚡ Flutter</text>
+    <text x="85" y="61" text-anchor="middle" class="chip">⚡ Flutter</text>
   </g>
 
-  <!-- Android Chip -->
+  <!-- Android Chip (Unique Modern Styling) -->
   <g>
-    <rect x="160" y="30" width="120" height="50" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="1.2">
+    <rect x="160" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#3DDC84" stroke-width="1.5">
       <animate attributeName="y" values="30;24;30" dur="3.2s" repeatCount="indefinite"/>
     </rect>
-    <text x="220" y="60" text-anchor="middle" class="chip">🤖 Android</text>
+    <!-- Vector Android Robot Icon -->
+    <path d="M 183 50 C 183 45 187 41 192 41 C 197 41 201 45 201 50 Z" fill="#3DDC84"/>
+    <line x1="186" y1="42" x2="183" y2="38" stroke="#3DDC84" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="198" y1="42" x2="201" y2="38" stroke="#3DDC84" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="189" cy="46" r="1" fill="#064e3b"/>
+    <circle cx="195" cy="46" r="1" fill="#064e3b"/>
+    <text x="235" y="61" text-anchor="middle" class="chip" fill="#3DDC84">Android</text>
   </g>
 
   <!-- iOS Chip -->
   <g>
-    <rect x="295" y="30" width="110" height="50" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2">
+    <rect x="300" y="30" width="110" height="50" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="2.8s" repeatCount="indefinite"/>
     </rect>
-    <text x="350" y="60" text-anchor="middle" class="chip">🍎 iOS</text>
+    <text x="355" y="61" text-anchor="middle" class="chip"> iOS</text>
   </g>
 
   <!-- Node.js Chip -->
   <g>
-    <rect x="420" y="30" width="125" height="50" rx="12" fill="#14532d" stroke="#22c55e" stroke-width="1.2">
+    <rect x="425" y="30" width="125" height="50" rx="12" fill="#14532d" stroke="#22c55e" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="3.4s" repeatCount="indefinite"/>
     </rect>
-    <text x="482" y="60" text-anchor="middle" class="chip">🟢 Node.js</text>
+    <text x="487" y="61" text-anchor="middle" class="chip">🟢 Node.js</text>
   </g>
 
   <!-- Express.js Chip -->
   <g>
-    <rect x="560" y="30" width="135" height="50" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2">
+    <rect x="565" y="30" width="135" height="50" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="3.1s" repeatCount="indefinite"/>
     </rect>
-    <text x="627" y="60" text-anchor="middle" class="chip">⚡ Express.js</text>
+    <text x="632" y="61" text-anchor="middle" class="chip">⚡ Express.js</text>
   </g>
 
   <!-- Django Chip -->
   <g>
-    <rect x="710" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1.2">
+    <rect x="715" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="2.9s" repeatCount="indefinite"/>
     </rect>
-    <text x="772" y="60" text-anchor="middle" class="chip">🐍 Django</text>
+    <text x="777" y="61" text-anchor="middle" class="chip">🐍 Django</text>
   </g>
 
   <!-- Odoo Chip -->
   <g>
-    <rect x="850" y="30" width="140" height="50" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="1.2">
+    <rect x="855" y="30" width="140" height="50" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="1.2">
       <animate attributeName="y" values="30;24;30" dur="3.3s" repeatCount="indefinite"/>
     </rect>
-    <text x="920" y="60" text-anchor="middle" class="chip">🧩 Odoo ERP</text>
+    <text x="925" y="61" text-anchor="middle" class="chip">🧩 Odoo ERP</text>
   </g>
 </svg>

@@ -1,95 +1,154 @@
-<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="450" height="450" viewBox="0 0 450 450" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="nativeBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b132b"/>
-      <stop offset="50%" stop-color="#1c1936"/>
-      <stop offset="100%" stop-color="#090d16"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="40%" stop-color="#071a15"/>
+      <stop offset="75%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#030712"/>
     </linearGradient>
+
+    <!-- Android Neon Green Gradient -->
+    <linearGradient id="androidGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3DDC84"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+
+    <!-- Kotlin Purple/Pink Gradient -->
     <linearGradient id="kotlinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#7F52FF"/>
-      <stop offset="100%" stop-color="#C711E1"/>
+      <stop offset="50%" stop-color="#C711E1"/>
+      <stop offset="100%" stop-color="#E24462"/>
     </linearGradient>
-    <linearGradient id="swiftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FA7343"/>
-      <stop offset="100%" stop-color="#FF5252"/>
+
+    <!-- Cyan Glow Gradient -->
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0284C7"/>
     </linearGradient>
-    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+
+    <!-- Phone Glass Gradient -->
+    <linearGradient id="phoneGlass" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1e293b"/>
       <stop offset="100%" stop-color="#0f172a"/>
     </linearGradient>
-    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7F52FF" flood-opacity="0.35"/>
+
+    <!-- Glow Filters -->
+    <filter id="greenGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="25" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow3D" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
     </filter>
   </defs>
 
-  <!-- Background Card -->
-  <rect width="400" height="400" rx="24" fill="url(#nativeBg)" stroke="#7F52FF" stroke-width="2" stroke-opacity="0.35"/>
+  <!-- Base Card -->
+  <rect width="450" height="450" rx="28" fill="url(#bgGrad)" stroke="#3DDC84" stroke-width="1.5" stroke-opacity="0.35"/>
 
-  <!-- Glowing Grid Background -->
-  <path d="M 50 100 L 350 100 M 50 200 L 350 200 M 50 300 L 350 300 M 100 50 L 100 350 M 200 50 L 200 350 M 300 50 L 300 350" stroke="#7F52FF" stroke-opacity="0.08" stroke-width="1"/>
+  <!-- Ambient Android Glow Backdrop -->
+  <circle cx="225" cy="210" r="130" fill="#3DDC84" opacity="0.12" filter="url(#greenGlow)">
+    <animate attributeName="opacity" values="0.1;0.18;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="120" r="80" fill="#7F52FF" opacity="0.12" filter="url(#greenGlow)">
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="5s" repeatCount="indefinite"/>
+  </circle>
 
-  <!-- Central Dual Phone Mockups -->
-  <!-- Android Device Mockup -->
-  <g transform="translate(80, 70)" filter="url(#cardShadow)">
-    <rect width="110" height="210" rx="20" fill="url(#phoneGrad)" stroke="#3DDC84" stroke-width="2">
-      <animate attributeName="y" values="0;-6;0" dur="3.6s" repeatCount="indefinite"/>
-    </rect>
-    <!-- Screen content -->
-    <rect x="10" y="20" width="90" height="170" rx="10" fill="#030712"/>
-    <circle cx="55" cy="12" r="3" fill="#3DDC84"/>
-    <!-- App UI Mockup -->
-    <rect x="20" y="32" width="70" height="24" rx="6" fill="#3DDC84" fill-opacity="0.25"/>
-    <text x="55" y="48" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#3DDC84" text-anchor="middle">Android</text>
-    <rect x="20" y="66" width="70" height="40" rx="6" fill="#1f2937"/>
-    <circle cx="35" cy="86" r="10" fill="url(#kotlinGrad)"/>
-    <rect x="52" y="78" width="30" height="6" rx="3" fill="#9ca3af"/>
-    <rect x="52" y="88" width="22" height="5" rx="2" fill="#4b5563"/>
-    <rect x="20" y="114" width="70" height="28" rx="6" fill="#1f2937"/>
-    <rect x="20" y="150" width="70" height="28" rx="6" fill="#1f2937"/>
+  <!-- Futuristic Background Grid -->
+  <g stroke="#3DDC84" stroke-opacity="0.06" stroke-width="1">
+    <circle cx="225" cy="225" r="180" stroke-dasharray="6,6"/>
+    <circle cx="225" cy="225" r="130"/>
+    <line x1="225" y1="30" x2="225" y2="420"/>
+    <line x1="30" y1="225" x2="420" y2="225"/>
   </g>
 
-  <!-- iOS Device Mockup -->
-  <g transform="translate(210, 85)" filter="url(#cardShadow)">
-    <rect width="110" height="210" rx="22" fill="url(#phoneGrad)" stroke="#FA7343" stroke-width="2">
-      <animate attributeName="y" values="0;6;0" dur="3.8s" repeatCount="indefinite"/>
+  <!-- Modern 3D Floating Isometric Android Device -->
+  <g transform="translate(135, 95)" filter="url(#shadow3D)">
+    <!-- Phone Outer Body -->
+    <rect width="180" height="280" rx="26" fill="url(#phoneGlass)" stroke="#3DDC84" stroke-width="2.5">
+      <animate attributeName="y" values="0;-8;0" dur="4s" repeatCount="indefinite"/>
     </rect>
-    <!-- Dynamic Island / Notch -->
-    <rect x="10" y="20" width="90" height="170" rx="12" fill="#030712"/>
-    <rect x="42" y="25" width="26" height="8" rx="4" fill="#111827"/>
-    <!-- App UI Mockup -->
-    <rect x="20" y="42" width="70" height="24" rx="6" fill="#FA7343" fill-opacity="0.25"/>
-    <text x="55" y="58" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#FA7343" text-anchor="middle">iOS / Swift</text>
-    <rect x="20" y="74" width="70" height="42" rx="6" fill="#1f2937"/>
-    <circle cx="35" cy="95" r="10" fill="url(#swiftGrad)"/>
-    <rect x="52" y="88" width="30" height="6" rx="3" fill="#9ca3af"/>
-    <rect x="52" y="98" width="20" height="5" rx="2" fill="#4b5563"/>
-    <rect x="20" y="124" width="70" height="28" rx="6" fill="#1f2937"/>
-    <rect x="20" y="160" width="70" height="20" rx="6" fill="#1f2937"/>
+
+    <!-- Bezel Edge Reflection -->
+    <rect x="6" y="6" width="168" height="268" rx="20" fill="#030712"/>
+
+    <!-- Screen Punch Hole Camera -->
+    <circle cx="90" cy="18" r="4.5" fill="#000000" stroke="#1f2937" stroke-width="1"/>
+    <circle cx="91" cy="17.5" r="1" fill="#3DDC84" opacity="0.8"/>
+
+    <!-- Top UI Status Bar -->
+    <text x="22" y="21" font-family="-apple-system, Roboto, sans-serif" font-size="9" font-weight="700" fill="#9ca3af">09:41</text>
+    <path d="M 152 14 L 158 14 L 158 20 L 152 20 Z M 146 16 L 149 16 L 149 20 L 146 20 Z M 140 18 L 143 18 L 143 20 L 140 20 Z" fill="#3DDC84"/>
+
+    <!-- UI Card 1: Android Jetpack Compose Header -->
+    <rect x="14" y="36" width="152" height="64" rx="14" fill="#064e3b" fill-opacity="0.4" stroke="#3DDC84" stroke-width="1"/>
+    <text x="26" y="56" font-family="-apple-system, Roboto, sans-serif" font-size="11" font-weight="800" fill="#3DDC84">Jetpack Compose</text>
+    <text x="26" y="70" font-family="-apple-system, Roboto, sans-serif" font-size="8.5" font-weight="500" fill="#a7f3d0">Kotlin Multiplatform • M3</text>
+    <rect x="26" y="78" width="80" height="12" rx="6" fill="#3DDC84" fill-opacity="0.2"/>
+    <text x="66" y="87" font-family="-apple-system, Roboto, sans-serif" font-size="7.5" font-weight="700" fill="#3DDC84" text-anchor="middle">Material You v3</text>
+
+    <!-- UI Card 2: Interactive Analytics Widget -->
+    <rect x="14" y="108" width="152" height="85" rx="14" fill="#1e1b4b" fill-opacity="0.5" stroke="#818cf8" stroke-width="1"/>
+    <text x="26" y="126" font-family="-apple-system, Roboto, sans-serif" font-size="10" font-weight="700" fill="#c7d2fe">Live Performance</text>
+    <!-- Wave Graph -->
+    <path d="M 26 165 C 50 135, 75 180, 100 145 C 120 125, 140 150, 154 135" stroke="#38BDF8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="100" cy="145" r="4" fill="#38BDF8" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- UI Card 3: Floating Action Pods -->
+    <rect x="14" y="200" width="70" height="58" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="49" y="224" font-family="'Fira Code', monospace" font-size="16" text-anchor="middle">⚡</text>
+    <text x="49" y="244" font-family="-apple-system, Roboto, sans-serif" font-size="8" font-weight="700" fill="#38bdf8" text-anchor="middle">Kotlin 2.0</text>
+
+    <rect x="96" y="200" width="70" height="58" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="131" y="224" font-family="'Fira Code', monospace" font-size="16" text-anchor="middle">🛡️</text>
+    <text x="131" y="244" font-family="-apple-system, Roboto, sans-serif" font-size="8" font-weight="700" fill="#a855f7" text-anchor="middle">Coroutines</text>
   </g>
 
-  <!-- Floating Tech Badges -->
-  <!-- Kotlin Badge -->
-  <g transform="translate(30, 290)">
-    <rect width="100" height="32" rx="16" fill="#1e1b4b" stroke="#7F52FF" stroke-width="1.5">
-      <animate attributeName="y" values="0;4;0" dur="3s" repeatCount="indefinite"/>
-    </rect>
-    <text x="50" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#c084fc" text-anchor="middle">Kotlin • Android</text>
+  <!-- 3D Floating Android Mascot Robot Head -->
+  <g transform="translate(60, 45)" filter="url(#shadow3D)">
+    <animate attributeName="transform" type="translate" values="60,45; 60,35; 60,45" dur="3.5s" repeatCount="indefinite"/>
+    <!-- Glow behind bot -->
+    <circle cx="45" cy="45" r="42" fill="#3DDC84" opacity="0.2" filter="url(#greenGlow)"/>
+    <!-- Head Dome -->
+    <path d="M 15 45 C 15 24 28 12 45 12 C 62 12 75 24 75 45 Z" fill="url(#androidGreen)"/>
+    <!-- Antennas -->
+    <line x1="26" y1="14" x2="18" y2="4" stroke="#3DDC84" stroke-width="3" stroke-linecap="round"/>
+    <line x1="64" y1="14" x2="72" y2="4" stroke="#3DDC84" stroke-width="3" stroke-linecap="round"/>
+    <!-- Eyes -->
+    <circle cx="32" cy="30" r="3.5" fill="#030712"/>
+    <circle cx="58" cy="30" r="3.5" fill="#030712"/>
+    <!-- Glass Badge Plate -->
+    <rect x="0" y="52" width="90" height="24" rx="12" fill="#030712" stroke="#3DDC84" stroke-width="1.2"/>
+    <text x="45" y="68" font-family="'Fira Code', monospace" font-size="9.5" font-weight="800" fill="#3DDC84" text-anchor="middle">ANDROID OS</text>
   </g>
 
-  <!-- Swift Badge -->
-  <g transform="translate(270, 290)">
-    <rect width="100" height="32" rx="16" fill="#1e1b4b" stroke="#FA7343" stroke-width="1.5">
-      <animate attributeName="y" values="0;-4;0" dur="3.2s" repeatCount="indefinite"/>
-    </rect>
-    <text x="50" y="21" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#fdba74" text-anchor="middle">Swift • iOS</text>
+  <!-- 3D Floating Kotlin / Swift Badge -->
+  <g transform="translate(305, 55)" filter="url(#shadow3D)">
+    <animate attributeName="transform" type="translate" values="305,55; 305,65; 305,55" dur="4.2s" repeatCount="indefinite"/>
+    <rect width="90" height="90" rx="20" fill="#0f172a" stroke="url(#kotlinGrad)" stroke-width="2"/>
+    <!-- Kotlin Vector Logo Shape -->
+    <path d="M 25 25 L 65 25 L 45 45 L 65 65 L 25 65 Z" fill="url(#kotlinGrad)"/>
+    <text x="45" y="78" font-family="-apple-system, Roboto, sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">KOTLIN</text>
   </g>
 
-  <!-- Floating Status Badge -->
-  <g transform="translate(130, 350)">
-    <rect width="140" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
-    <circle cx="20" cy="14" r="4" fill="#38bdf8">
+  <!-- Bottom Floating Feature Pills -->
+  <g transform="translate(35, 390)">
+    <rect width="170" height="34" rx="17" fill="#0f172a" stroke="#3DDC84" stroke-width="1.2"/>
+    <circle cx="18" cy="17" r="4.5" fill="#3DDC84">
       <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="32" y="19" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">Native Architecture</text>
+    <text x="94" y="22" font-family="-apple-system, Roboto, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle">Native Architecture</text>
+  </g>
+
+  <g transform="translate(245, 390)">
+    <rect width="170" height="34" rx="17" fill="#0f172a" stroke="#38BDF8" stroke-width="1.2"/>
+    <circle cx="18" cy="17" r="4.5" fill="#38BDF8">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="94" y="22" font-family="-apple-system, Roboto, sans-serif" font-size="11" font-weight="700" fill="#e2e8f0" text-anchor="middle">Hardware &amp; BLE Sync</text>
   </g>
 </svg>
