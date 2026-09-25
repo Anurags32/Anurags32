@@ -1,0 +1,44 @@
+<svg width="100%" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#0A66C2"/>
+    </linearGradient>
+    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="220" rx="18" fill="url(#bg-grad)"/>
+
+  <!-- animated floating waves -->
+  <path fill="url(#wave-grad)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,160 Q225,120 450,160 T900,160 L900,220 L0,220 Z;
+              M0,150 Q225,190 450,150 T900,150 L900,220 L0,220 Z;
+              M0,160 Q225,120 450,160 T900,160 L900,220 L0,220 Z"/>
+  </path>
+
+  <!-- floating tech dots -->
+  <circle cx="80" cy="50" r="6" fill="#ffffff" opacity="0.7">
+    <animate attributeName="cy" values="50;35;50" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="820" cy="60" r="5" fill="#ffffff" opacity="0.6">
+    <animate attributeName="cy" values="60;45;60" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="180" r="4" fill="#ffffff" opacity="0.5">
+    <animate attributeName="cy" values="180;165;180" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="760" cy="170" r="5" fill="#ffffff" opacity="0.6">
+    <animate attributeName="cy" values="170;155;170" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="450" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">
+    Anurag Tiwari
+  </text>
+  <text x="450" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle">
+    Flutter &amp; Mobile App Developer (iOS/Android) &#8226; Backend Engineer (Node.js, Express, Django, Odoo)
+  </text>
+</svg>
