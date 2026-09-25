@@ -1,57 +1,78 @@
 <svg width="100%" height="110" viewBox="0 0 1020 110" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <linearGradient id="stripBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#0d111a"/>
+      <stop offset="100%" stop-color="#080714"/>
+    </linearGradient>
+
+    <linearGradient id="stripBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.4"/>
+    </linearGradient>
+
     <style>
-      .chip { font-family: Segoe UI, Arial, sans-serif; font-size: 15px; font-weight: 600; fill: #ffffff; }
+      .chip { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 700; fill: #ffffff; }
     </style>
   </defs>
-  <rect width="1020" height="110" rx="14" fill="#0d1117"/>
 
+  <!-- Background Base -->
+  <rect width="1020" height="110" rx="16" fill="url(#stripBg)" stroke="url(#stripBorder)" stroke-width="1.2"/>
+
+  <!-- Flutter Chip -->
   <g>
-    <rect x="20" y="30" width="120" height="50" rx="10" fill="#02569B">
-      <animate attributeName="y" values="30;25;30" dur="2.5s" repeatCount="indefinite"/>
+    <rect x="25" y="30" width="120" height="50" rx="12" fill="#0369a1" stroke="#38bdf8" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="3s" repeatCount="indefinite"/>
     </rect>
-    <text x="80" y="60" text-anchor="middle" class="chip">Flutter</text>
+    <text x="85" y="60" text-anchor="middle" class="chip">⚡ Flutter</text>
   </g>
 
+  <!-- Android Chip -->
   <g>
-    <rect x="155" y="30" width="120" height="50" rx="10" fill="#3DDC84">
-      <animate attributeName="y" values="30;25;30" dur="2.7s" repeatCount="indefinite"/>
+    <rect x="160" y="30" width="120" height="50" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="3.2s" repeatCount="indefinite"/>
     </rect>
-    <text x="215" y="60" text-anchor="middle" class="chip" fill="#0d1117">Android</text>
+    <text x="220" y="60" text-anchor="middle" class="chip">🤖 Android</text>
   </g>
 
+  <!-- iOS Chip -->
   <g>
-    <rect x="290" y="30" width="100" height="50" rx="10" fill="#111111">
-      <animate attributeName="y" values="30;25;30" dur="2.3s" repeatCount="indefinite"/>
+    <rect x="295" y="30" width="110" height="50" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="2.8s" repeatCount="indefinite"/>
     </rect>
-    <text x="340" y="60" text-anchor="middle" class="chip">iOS</text>
+    <text x="350" y="60" text-anchor="middle" class="chip">🍎 iOS</text>
   </g>
 
+  <!-- Node.js Chip -->
   <g>
-    <rect x="405" y="30" width="120" height="50" rx="10" fill="#339933">
-      <animate attributeName="y" values="30;25;30" dur="2.9s" repeatCount="indefinite"/>
+    <rect x="420" y="30" width="125" height="50" rx="12" fill="#14532d" stroke="#22c55e" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="3.4s" repeatCount="indefinite"/>
     </rect>
-    <text x="465" y="60" text-anchor="middle" class="chip">Node.js</text>
+    <text x="482" y="60" text-anchor="middle" class="chip">🟢 Node.js</text>
   </g>
 
+  <!-- Express.js Chip -->
   <g>
-    <rect x="540" y="30" width="130" height="50" rx="10" fill="#404040">
-      <animate attributeName="y" values="30;25;30" dur="2.6s" repeatCount="indefinite"/>
+    <rect x="560" y="30" width="135" height="50" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="3.1s" repeatCount="indefinite"/>
     </rect>
-    <text x="605" y="60" text-anchor="middle" class="chip">Express.js</text>
+    <text x="627" y="60" text-anchor="middle" class="chip">⚡ Express.js</text>
   </g>
 
+  <!-- Django Chip -->
   <g>
-    <rect x="685" y="30" width="120" height="50" rx="10" fill="#092E20">
-      <animate attributeName="y" values="30;25;30" dur="2.4s" repeatCount="indefinite"/>
+    <rect x="710" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="2.9s" repeatCount="indefinite"/>
     </rect>
-    <text x="745" y="60" text-anchor="middle" class="chip">Django</text>
+    <text x="772" y="60" text-anchor="middle" class="chip">🐍 Django</text>
   </g>
 
+  <!-- Odoo Chip -->
   <g>
-    <rect x="820" y="30" width="110" height="50" rx="10" fill="#714B67">
-      <animate attributeName="y" values="30;25;30" dur="2.8s" repeatCount="indefinite"/>
+    <rect x="850" y="30" width="140" height="50" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="1.2">
+      <animate attributeName="y" values="30;24;30" dur="3.3s" repeatCount="indefinite"/>
     </rect>
-    <text x="875" y="60" text-anchor="middle" class="chip">Odoo</text>
+    <text x="920" y="60" text-anchor="middle" class="chip">🧩 Odoo ERP</text>
   </g>
 </svg>

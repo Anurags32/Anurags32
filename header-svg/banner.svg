@@ -1,44 +1,205 @@
-<svg width="100%" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="260" viewBox="0 0 950 260" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06B6D4"/>
-      <stop offset="50%" stop-color="#7C3AED"/>
-      <stop offset="100%" stop-color="#0A66C2"/>
+    <!-- Background Gradients -->
+    <linearGradient id="canvasBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="45%" stop-color="#0b0f19"/>
+      <stop offset="80%" stop-color="#0f0c1b"/>
+      <stop offset="100%" stop-color="#05070d"/>
     </linearGradient>
-    <linearGradient id="wave-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="40%" stop-color="#818CF8"/>
+      <stop offset="75%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <linearGradient id="lineGradCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="neonGlowCyan" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowPurple" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="900" height="220" rx="18" fill="url(#bg-grad)"/>
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .badge-text {
+      font-family: "Fira Code", "JetBrains Mono", Consolas, monospace;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .sub-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      fill: #94A3B8;
+    }
+    .bracket {
+      font-family: "Fira Code", monospace;
+      font-size: 20px;
+      fill: #06B6D4;
+      opacity: 0.4;
+    }
+  </style>
 
-  <!-- animated floating waves -->
-  <path fill="url(#wave-grad)">
-    <animate attributeName="d" dur="6s" repeatCount="indefinite"
-      values="M0,160 Q225,120 450,160 T900,160 L900,220 L0,220 Z;
-              M0,150 Q225,190 450,150 T900,150 L900,220 L0,220 Z;
-              M0,160 Q225,120 450,160 T900,160 L900,220 L0,220 Z"/>
-  </path>
+  <!-- Outer Rounded Canvas -->
+  <rect width="950" height="260" rx="20" fill="url(#canvasBg)"/>
 
-  <!-- floating tech dots -->
-  <circle cx="80" cy="50" r="6" fill="#ffffff" opacity="0.7">
-    <animate attributeName="cy" values="50;35;50" dur="3s" repeatCount="indefinite"/>
+  <!-- Ambient Background Neon Auras -->
+  <circle cx="120" cy="60" r="90" fill="#06B6D4" opacity="0.18" filter="url(#neonGlowCyan)">
+    <animate attributeName="cx" values="120;160;120" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.18;0.28;0.18" dur="5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="820" cy="60" r="5" fill="#ffffff" opacity="0.6">
-    <animate attributeName="cy" values="60;45;60" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="150" cy="180" r="4" fill="#ffffff" opacity="0.5">
-    <animate attributeName="cy" values="180;165;180" dur="3.5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="760" cy="170" r="5" fill="#ffffff" opacity="0.6">
-    <animate attributeName="cy" values="170;155;170" dur="3.2s" repeatCount="indefinite"/>
+  
+  <circle cx="830" cy="190" r="110" fill="#8B5CF6" opacity="0.22" filter="url(#neonGlowPurple)">
+    <animate attributeName="cx" values="830;790;830" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.22;0.32;0.22" dur="6s" repeatCount="indefinite"/>
   </circle>
 
-  <text x="450" y="90" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" fill="#ffffff" text-anchor="middle">
-    Anurag Tiwari
+  <circle cx="475" cy="130" r="130" fill="#3B82F6" opacity="0.1" filter="url(#neonGlowCyan)">
+    <animate attributeName="r" values="130;150;130" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Modern Subtle Grid Background -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="50" x2="950" y2="50"/>
+    <line x1="0" y1="105" x2="950" y2="105"/>
+    <line x1="0" y1="160" x2="950" y2="160"/>
+    <line x1="0" y1="215" x2="950" y2="215"/>
+    <line x1="120" y1="0" x2="120" y2="260"/>
+    <line x1="260" y1="0" x2="260" y2="260"/>
+    <line x1="400" y1="0" x2="400" y2="260"/>
+    <line x1="550" y1="0" x2="550" y2="260"/>
+    <line x1="690" y1="0" x2="690" y2="260"/>
+    <line x1="830" y1="0" x2="830" y2="260"/>
+  </g>
+
+  <!-- High-Tech Floating Particles / Stars -->
+  <circle cx="90" cy="190" r="2" fill="#22D3EE">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="210" cy="40" r="1.5" fill="#A78BFA">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="750" cy="50" r="2.5" fill="#38BDF8">
+    <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="880" cy="110" r="1.5" fill="#C084FC">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="340" cy="225" r="2" fill="#06B6D4">
+    <animate attributeName="opacity" values="0.1;0.8;0.1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Tech Code Brackets Decorations -->
+  <text x="55" y="140" class="bracket">&lt;code&gt;</text>
+  <text x="830" y="140" class="bracket">&lt;/&gt;</text>
+
+  <!-- Glassmorphic Inner Frame / Card -->
+  <rect x="25" y="20" width="900" height="220" rx="16" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+  <!-- Scanning Cyber Laser Highlight -->
+  <line x1="40" y1="21" x2="160" y2="21" stroke="url(#lineGradCyan)" stroke-width="2.5">
+    <animate attributeName="x1" values="30;760;30" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="180;910;180" dur="6s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Corner Tech Accent Marks -->
+  <!-- Top Left -->
+  <path d="M 35 32 L 35 27 L 45 27" stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Top Right -->
+  <path d="M 915 32 L 915 27 L 905 27" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Bottom Left -->
+  <path d="M 35 228 L 35 233 L 45 233" stroke="#06B6D4" stroke-width="2" fill="none" opacity="0.8"/>
+  <!-- Bottom Right -->
+  <path d="M 915 228 L 915 233 L 905 233" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.8"/>
+
+  <!-- Main Animated Terminal Dot Indicator -->
+  <g transform="translate(475, 52)">
+    <!-- Status Pill -->
+    <rect x="-85" y="-14" width="170" height="26" rx="13" fill="#030712" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="-62" cy="-1" r="4.5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="8" y="3.5" font-family="'Fira Code', monospace" font-size="11" font-weight="600" fill="#34D399" text-anchor="middle" letter-spacing="1">AVAILABLE FOR HIRE</text>
+  </g>
+
+  <!-- Hero Name with Gradient & Subtle Shadow -->
+  <text x="475" y="112" class="title" fill="url(#textGrad)" text-anchor="middle" filter="url(#softGlow)">
+    ANURAG TIWARI
   </text>
-  <text x="450" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#e2e8f0" text-anchor="middle">
-    Flutter &amp; Mobile App Developer (iOS/Android) &#8226; Backend Engineer (Node.js, Express, Django, Odoo)
+
+  <!-- Role Subtitle -->
+  <text x="475" y="148" class="sub-title" text-anchor="middle">
+    Cross-Platform Mobile App Architect &amp; Scalable Backend Engineer
   </text>
+
+  <!-- Tech Focus Badges -->
+  <g transform="translate(475, 195)">
+    <!-- Badge 1: Mobile -->
+    <g transform="translate(-290, 0)">
+      <rect x="0" y="-15" width="175" height="30" rx="8" fill="#082f49" stroke="#0284c7" stroke-width="1.2" opacity="0.9"/>
+      <circle cx="18" cy="0" r="3.5" fill="#38BDF8"/>
+      <text x="96" y="4" fill="#E0F2FE" class="badge-text" text-anchor="middle">Flutter • iOS • Android</text>
+    </g>
+
+    <!-- Badge 2: Backend -->
+    <g transform="translate(-95, 0)">
+      <rect x="0" y="-15" width="190" height="30" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" opacity="0.9"/>
+      <circle cx="18" cy="0" r="3.5" fill="#818CF8"/>
+      <text x="103" y="4" fill="#EEF2FF" class="badge-text" text-anchor="middle">Node • Express • Django</text>
+    </g>
+
+    <!-- Badge 3: ERP / Odoo -->
+    <g transform="translate(115, 0)">
+      <rect x="0" y="-15" width="175" height="30" rx="8" fill="#2e1065" stroke="#9333ea" stroke-width="1.2" opacity="0.9"/>
+      <circle cx="18" cy="0" r="3.5" fill="#C084FC"/>
+      <text x="96" y="4" fill="#FAF5FF" class="badge-text" text-anchor="middle">Odoo ERP • PostgreSQL</text>
+    </g>
+  </g>
 </svg>
