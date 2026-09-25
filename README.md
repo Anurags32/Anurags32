@@ -5,13 +5,6 @@
 
 <br/><br/>
 
-<!-- Profile Photo -->
-<a href="https://github.com/Anurags32">
-  <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/profile.png" width="150" height="150" alt="Anurag Tiwari" style="border-radius: 50%;" />
-</a>
-
-<br/><br/>
-
 <!-- Animated Typing Header -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=750&lines=Hi+%F0%9F%91%8B%2C+I'm+Anurag+Tiwari;Mobile+App+Developer+(Flutter+%7C+iOS+%7C+Android);Backend+Engineer+(Node.js+%7C+Express+%7C+Django);Hands-on+Experience+with+Odoo+ERP+%26+Python" alt="Typing SVG" />
 
