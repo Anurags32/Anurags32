@@ -1,17 +1,19 @@
 <div align="center">
 
-<!-- Custom local animated header banner (header-svg/banner.svg) -->
-<img src="header-svg/banner.svg" width="100%" alt="Anurag Tiwari Banner" />
+<!-- Custom Animated Header Banner -->
+<img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/header-svg/banner.svg" width="100%" alt="Anurag Tiwari Banner" />
 
 <br/><br/>
 
 <!-- Profile Photo -->
-<img src="images/profile.png" width="140" height="140" style="border-radius:50%; border: 3px solid #06B6D4; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);" alt="Anurag Tiwari" />
+<a href="https://github.com/Anurags32">
+  <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/profile.png" width="150" height="150" alt="Anurag Tiwari" style="border-radius: 50%;" />
+</a>
 
 <br/><br/>
 
 <!-- Animated Typing Header -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=750&lines=Hi+%F0%9F%91%8B%2C+I'm+Anurag+Tiwari;Mobile+App+Developer+(Flutter+%7C+iOS+%7C+Android);Backend+Engineer+(Node.js+%7C+Express+%7C+Django);Odoo+%7C+ERP+Solutions+Developer" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=06B6D4&center=true&vCenter=true&width=750&lines=Hi+%F0%9F%91%8B%2C+I'm+Anurag+Tiwari;Mobile+App+Developer+(Flutter+%7C+iOS+%7C+Android);Backend+Engineer+(Node.js+%7C+Express+%7C+Django);Hands-on+Experience+with+Odoo+ERP+%26+Python" alt="Typing SVG" />
 
 </div>
 
@@ -20,16 +22,17 @@
 # 👨‍💻 About Me
 
 ### **Anurag Tiwari**
-**Mobile App Developer | Backend Engineer | ERP Specialist**  
-*Flutter • iOS • Android • Node.js • Express.js • Django • Odoo*
+**Mobile App Developer | Backend Engineer**  
+*Flutter • iOS • Android • Node.js • Express.js • Django* (with hands-on experience in Odoo ERP)
 
-I build high-performance cross-platform mobile apps and scalable backend systems — from sleek Flutter applications for iOS & Android to robust REST APIs with Node.js/Express and Django, plus tailored ERP solutions in Odoo.
+I specialize in engineering high-performance cross-platform mobile apps for iOS & Android with Flutter, building scalable backend REST APIs and microservices using Node.js, Express.js, and Django, and customizing enterprise workflows with Odoo ERP and PostgreSQL.
 
-- 🎯 **Focus Areas:** Cross-Platform Mobile Apps, Backend Microservices, ERP (Odoo) Architecture
+- 🎯 **Core Focus:** Mobile App Development (Flutter / iOS / Android), Backend Architecture (Node.js / Django)
+- 🧩 **ERP Knowledge:** Hands-on experience developing and customizing modules in Odoo ERP
 - 🌱 **Currently Learning:** Next.js, Microservices Architecture & Cloud System Design <!-- [EDITABLE] -->
-- 💬 **Ask me about:** Flutter, Dart, iOS, Android, Node.js, Express.js, Django, Odoo ERP, PostgreSQL
+- 💬 **Ask me about:** Flutter, Dart, Android (Kotlin), iOS (Swift), Node.js, Express, Django, PostgreSQL, Odoo
 - 📬 **Email:** [anuragtiwari1172000@gmail.com](mailto:anuragtiwari1172000@gmail.com)
-- 📍 **Location:** India 🇮🇳 (Open to Remote & Global Opportunities) <!-- [EDITABLE] -->
+- 📍 **Location:** India 🇮🇳 (Open to Remote & Relocation) <!-- [EDITABLE] -->
 
 <p align="center">
   <a href="https://www.linkedin.com/in/anurag-tiwari-7a76121a6/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -37,7 +40,7 @@ I build high-performance cross-platform mobile apps and scalable backend systems
 </p>
 
 <p align="center">
-  <img src="images/tech-banner.png" width="100%" alt="Tech Architecture & Ecosystem Banner" style="border-radius: 12px; margin-top: 10px;" />
+  <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/tech-banner.png" width="100%" alt="Tech Architecture & Ecosystem Banner" />
 </p>
 
 ---
@@ -48,7 +51,7 @@ I build high-performance cross-platform mobile apps and scalable backend systems
   <tr>
     <td width="50%" valign="top">
       <div align="center">
-        <img src="images/flutter-app.png" width="100%" style="border-radius: 10px;" alt="Flutter App Project" />
+        <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/flutter-app.png" width="100%" alt="Flutter App Project" />
       </div>
       <h3>📱 PulseMart — Flutter E-Commerce & Delivery App</h3>
       <p>Cross-platform mobile application built with Flutter & Dart for iOS and Android, featuring reactive Bloc state management, Firebase authentication, and live order tracking.</p>
@@ -61,7 +64,7 @@ I build high-performance cross-platform mobile apps and scalable backend systems
     </td>
     <td width="50%" valign="top">
       <div align="center">
-        <img src="images/backend-api.png" width="100%" style="border-radius: 10px;" alt="Backend API Project" />
+        <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/backend-api.png" width="100%" alt="Backend API Project" />
       </div>
       <h3>⚡ CloudSync — Scalable REST & Microservices Engine</h3>
       <p>High-performance backend service engineered with Node.js, Express.js, and Django, featuring JWT role-based auth, Redis caching, and WebSocket streams for sub-50ms latency.</p>
@@ -76,20 +79,7 @@ I build high-performance cross-platform mobile apps and scalable backend systems
   <tr>
     <td width="50%" valign="top">
       <div align="center">
-        <img src="images/odoo-erp.svg" width="100%" style="border-radius: 10px;" alt="Odoo ERP Project" />
-      </div>
-      <h3>🧩 Odoo Enterprise Inventory & Supply Automation</h3>
-      <p>Custom Odoo module built with Python and PostgreSQL to automate complex warehouse workflows, barcode tracking, sales reporting, and tailored QWeb invoice generation.</p>
-      <p>
-        <img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" />
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/XML-005FAD?style=flat-square&logo=xml&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <div align="center">
-        <img src="images/native-app.svg" width="100%" style="border-radius: 10px;" alt="Native Mobile Project" />
+        <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/native-app.svg" width="100%" alt="Native Mobile Project" />
       </div>
       <h3>📲 Native iOS & Android Integration Toolkit</h3>
       <p>Platform-specific modules in Swift and Kotlin showcasing hardware sensor access, background location sync, native widget extensions, and offline SQLite caching.</p>
@@ -100,6 +90,19 @@ I build high-performance cross-platform mobile apps and scalable backend systems
         <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white" />
       </p>
     </td>
+    <td width="50%" valign="top">
+      <div align="center">
+        <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/images/odoo-erp.svg" width="100%" alt="Odoo ERP Project" />
+      </div>
+      <h3>🧩 Enterprise Odoo Custom Module Integration</h3>
+      <p>Custom Odoo business module built with Python and PostgreSQL to streamline inventory tracking, automated workflows, and tailored invoice reporting.</p>
+      <p>
+        <img src="https://img.shields.io/badge/Odoo-714B67?style=flat-square&logo=odoo&logoColor=white" />
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+        <img src="https://img.shields.io/badge/XML-005FAD?style=flat-square&logo=xml&logoColor=white" />
+      </p>
+    </td>
   </tr>
 </table>
 
@@ -108,7 +111,7 @@ I build high-performance cross-platform mobile apps and scalable backend systems
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="header-svg/skills-strip.svg" width="100%" alt="Skills Strip" />
+  <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/header-svg/skills-strip.svg" width="100%" alt="Skills Strip" />
 </div>
 
 <br/>
@@ -132,21 +135,15 @@ I build high-performance cross-platform mobile apps and scalable backend systems
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 </p>
 
-**ERP / Odoo**
+**Databases & Enterprise Tools**
 <p>
-  <img src="https://img.shields.io/badge/Odoo-714B67?style=for-the-badge&logo=odoo&logoColor=white" />
-  <img src="https://img.shields.io/badge/XML-005FAD?style=for-the-badge&logo=xml&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-</p>
-
-**Databases & Tools**
-<p>
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Odoo_ERP-714B67?style=for-the-badge&logo=odoo&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
 ---
@@ -174,9 +171,9 @@ I build high-performance cross-platform mobile apps and scalable backend systems
 
 ## 🎯 What I'm Looking For
 
-Actively looking for **Mobile App Development**, **Backend Engineering**, and **Full-Stack / ERP Developer** roles and opportunities where I can build impactful products using Flutter, Node.js, Django, and Odoo.
+Actively open for **Mobile App Development (Flutter / iOS / Android)** and **Backend Engineering (Node.js / Express / Django)** roles and opportunities to build scalable, high-impact products.
 
-Feel free to reach out if you'd like to collaborate, discuss architecture, or build something great together!
+Feel free to connect if you'd like to collaborate or discuss a project!
 
 ---
 
