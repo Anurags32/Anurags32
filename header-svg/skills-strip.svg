@@ -1,84 +1,93 @@
-<svg width="100%" height="110" viewBox="0 0 1020 110" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="120" viewBox="0 0 1040 120" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="stripBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050811"/>
-      <stop offset="50%" stop-color="#0d111a"/>
-      <stop offset="100%" stop-color="#080714"/>
+    <linearGradient id="sb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#04060F"/>
+      <stop offset="50%"  stop-color="#090D1C"/>
+      <stop offset="100%" stop-color="#060416"/>
     </linearGradient>
-
-    <linearGradient id="stripBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.4"/>
+    <linearGradient id="sb2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0.7"/>
+      <stop offset="33%"  stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="66%"  stop-color="#EC4899" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.7"/>
     </linearGradient>
-
+    <pattern id="sg" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#38BDF8" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
     <style>
-      .chip { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-size: 13.5px; font-weight: 700; fill: #ffffff; }
+      .ct { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 800; fill: #fff; }
+      .cs { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; }
     </style>
   </defs>
 
-  <!-- Background Base -->
-  <rect width="1020" height="110" rx="16" fill="url(#stripBg)" stroke="url(#stripBorder)" stroke-width="1.2"/>
+  <rect width="1040" height="120" rx="18" fill="url(#sb)" stroke="url(#sb2)" stroke-width="1.4"/>
+  <rect width="1040" height="120" rx="18" fill="url(#sg)"/>
 
-  <!-- Flutter Chip -->
+  <!-- Flutter -->
   <g>
-    <rect x="25" y="30" width="120" height="50" rx="12" fill="#0369a1" stroke="#38bdf8" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="3s" repeatCount="indefinite"/>
-    </rect>
-    <text x="85" y="61" text-anchor="middle" class="chip">⚡ Flutter</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="3.2s" repeatCount="indefinite"/>
+    <rect x="22" y="28" width="132" height="62" rx="14" fill="#023e6e" fill-opacity="0.5" stroke="#38bdf8" stroke-width="1.4"/>
+    <path d="M 42 74 L 54 86 L 66 74 L 54 62 Z" fill="#38BDF8" transform="scale(0.72) translate(15, -3)"/>
+    <path d="M 54 62 L 68 48 L 60 48 L 46 62 Z" fill="#0284C7" transform="scale(0.72) translate(15, -3)"/>
+    <text x="84" y="57" font-size="14" text-anchor="middle" class="ct">Flutter</text>
+    <text x="84" y="76" font-size="10" text-anchor="middle" class="cs" fill="#7dd3fc">Dart · BLoC · Riverpod</text>
   </g>
 
-  <!-- Android Chip (Unique Modern Styling) -->
+  <!-- Android / Kotlin -->
   <g>
-    <rect x="160" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#3DDC84" stroke-width="1.5">
-      <animate attributeName="y" values="30;24;30" dur="3.2s" repeatCount="indefinite"/>
-    </rect>
-    <!-- Vector Android Robot Icon -->
-    <path d="M 183 50 C 183 45 187 41 192 41 C 197 41 201 45 201 50 Z" fill="#3DDC84"/>
-    <line x1="186" y1="42" x2="183" y2="38" stroke="#3DDC84" stroke-width="1.2" stroke-linecap="round"/>
-    <line x1="198" y1="42" x2="201" y2="38" stroke="#3DDC84" stroke-width="1.2" stroke-linecap="round"/>
-    <circle cx="189" cy="46" r="1" fill="#064e3b"/>
-    <circle cx="195" cy="46" r="1" fill="#064e3b"/>
-    <text x="235" y="61" text-anchor="middle" class="chip" fill="#3DDC84">Android</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="3.5s" repeatCount="indefinite"/>
+    <rect x="168" y="28" width="142" height="62" rx="14" fill="#033729" fill-opacity="0.5" stroke="#3DDC84" stroke-width="1.4"/>
+    <path d="M 188 60 C 188 54 192 50 197 50 C 202 50 206 54 206 60 Z" fill="#3DDC84"/>
+    <line x1="191" y1="51" x2="188" y2="46" stroke="#3DDC84" stroke-width="1.4" stroke-linecap="round"/>
+    <line x1="203" y1="51" x2="206" y2="46" stroke="#3DDC84" stroke-width="1.4" stroke-linecap="round"/>
+    <circle cx="193.5" cy="56" r="1.3" fill="#022518"/>
+    <circle cx="200.5" cy="56" r="1.3" fill="#022518"/>
+    <text x="252" y="57" font-size="14" text-anchor="middle" class="ct" fill="#3DDC84">Android</text>
+    <text x="252" y="76" font-size="10" text-anchor="middle" class="cs" fill="#86efac">Kotlin · Jetpack Compose</text>
   </g>
 
-  <!-- iOS Chip -->
+  <!-- iOS / Swift -->
   <g>
-    <rect x="300" y="30" width="110" height="50" rx="12" fill="#1e293b" stroke="#94a3b8" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="2.8s" repeatCount="indefinite"/>
-    </rect>
-    <text x="355" y="61" text-anchor="middle" class="chip"> iOS</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="2.9s" repeatCount="indefinite"/>
+    <rect x="324" y="28" width="130" height="62" rx="14" fill="#1e293b" fill-opacity="0.5" stroke="#FA7343" stroke-width="1.4"/>
+    <text x="354" y="68" font-size="22" text-anchor="middle"></text>
+    <text x="408" y="57" font-size="14" text-anchor="middle" class="ct">Swift</text>
+    <text x="408" y="76" font-size="10" text-anchor="middle" class="cs" fill="#fdba74">iOS · SwiftUI · UIKit</text>
   </g>
 
-  <!-- Node.js Chip -->
+  <!-- Node.js -->
   <g>
-    <rect x="425" y="30" width="125" height="50" rx="12" fill="#14532d" stroke="#22c55e" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="3.4s" repeatCount="indefinite"/>
-    </rect>
-    <text x="487" y="61" text-anchor="middle" class="chip">🟢 Node.js</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="3.4s" repeatCount="indefinite"/>
+    <rect x="468" y="28" width="135" height="62" rx="14" fill="#0a3322" fill-opacity="0.5" stroke="#22c55e" stroke-width="1.4"/>
+    <text x="498" y="68" font-size="22" text-anchor="middle">🟢</text>
+    <text x="556" y="57" font-size="14" text-anchor="middle" class="ct">Node.js</text>
+    <text x="556" y="76" font-size="10" text-anchor="middle" class="cs" fill="#86efac">REST · WebSocket · JWT</text>
   </g>
 
-  <!-- Express.js Chip -->
+  <!-- Express.js -->
   <g>
-    <rect x="565" y="30" width="135" height="50" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="3.1s" repeatCount="indefinite"/>
-    </rect>
-    <text x="632" y="61" text-anchor="middle" class="chip">⚡ Express.js</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="3.1s" repeatCount="indefinite"/>
+    <rect x="617" y="28" width="138" height="62" rx="14" fill="#12104f" fill-opacity="0.5" stroke="#818cf8" stroke-width="1.4"/>
+    <text x="647" y="68" font-size="22" text-anchor="middle">⚡</text>
+    <text x="707" y="57" font-size="14" text-anchor="middle" class="ct">Express</text>
+    <text x="707" y="76" font-size="10" text-anchor="middle" class="cs" fill="#c7d2fe">Middleware · Microservice</text>
   </g>
 
-  <!-- Django Chip -->
+  <!-- Django -->
   <g>
-    <rect x="715" y="30" width="125" height="50" rx="12" fill="#064e3b" stroke="#34d399" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="2.9s" repeatCount="indefinite"/>
-    </rect>
-    <text x="777" y="61" text-anchor="middle" class="chip">🐍 Django</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,7; 0,0" dur="3.3s" repeatCount="indefinite"/>
+    <rect x="769" y="28" width="130" height="62" rx="14" fill="#033729" fill-opacity="0.45" stroke="#34d399" stroke-width="1.4"/>
+    <text x="799" y="68" font-size="22" text-anchor="middle">🐍</text>
+    <text x="857" y="57" font-size="14" text-anchor="middle" class="ct">Django</text>
+    <text x="857" y="76" font-size="10" text-anchor="middle" class="cs" fill="#6ee7b7">ORM · DRF · Python</text>
   </g>
 
-  <!-- Odoo Chip -->
+  <!-- Odoo ERP -->
   <g>
-    <rect x="855" y="30" width="140" height="50" rx="12" fill="#581c87" stroke="#c084fc" stroke-width="1.2">
-      <animate attributeName="y" values="30;24;30" dur="3.3s" repeatCount="indefinite"/>
-    </rect>
-    <text x="925" y="61" text-anchor="middle" class="chip">🧩 Odoo ERP</text>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-7; 0,0" dur="3.0s" repeatCount="indefinite"/>
+    <rect x="913" y="28" width="108" height="62" rx="14" fill="#37115a" fill-opacity="0.5" stroke="#c084fc" stroke-width="1.4"/>
+    <text x="935" y="68" font-size="22" text-anchor="middle">🧩</text>
+    <text x="967" y="57" font-size="13" text-anchor="middle" class="ct">Odoo ERP</text>
+    <text x="967" y="76" font-size="9" text-anchor="middle" class="cs" fill="#d8b4fe">Modules · PostgreSQL</text>
   </g>
 </svg>
