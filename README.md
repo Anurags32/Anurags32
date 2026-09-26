@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- ░░ HEADER WAVE ░░ -->
-<!-- <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,20,24,30&text=Anurag%20Tiwari&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Mobile%20App%20Developer%20%E2%80%A2%20Backend%20Engineer%20%E2%80%A2%20Odoo%20ERP%20Specialist&descFontSize=16&descAlignY=60&descColor=94a3b8&animation=twinkling&rotate=-2" width="100%" alt="Header" /> -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=12,20,24,30&text=Anurag%20Tiwari&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Mobile%20App%20Developer%20%E2%80%A2%20Backend%20Engineer%20%E2%80%A2%20Odoo%20ERP%20&descFontSize=16&descAlignY=60&descColor=94a3b8&animation=twinkling&rotate=-2" width="100%" alt="Header" />
 
 <!-- ░░ HERO BANNER SVG ░░ -->
 <img src="https://raw.githubusercontent.com/Anurags32/Anurags32/main/header-svg/banner.svg" width="100%" alt="Hero Banner" />
